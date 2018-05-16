@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/Joshua/Desktop/BDD-project/app/platforms/android/build/intermediates/exploded-aar/org.apache.cordova/CordovaLib/6.2.3/debug/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7a1530ac850543228ac856fe951d258efe29f918">
+        <dex dex="/Users/Joshua/Desktop/BDD-project/app/platforms/android/build/intermediates/pre-dexed/debug/CordovaLib-6.2.3-debug_8ef5ed5b119f13a915c9ee19c46292be237327bd.jar" />
+    </item>
+
+</items>

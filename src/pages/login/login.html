@@ -1,0 +1,36 @@
+<ion-content class="bg">
+  <ion-grid no-padding>
+    <ion-row justify-content-center class="logo-row">
+      <img class="logo" src="./assets/imgs/logo-proyecto.svg" alt="">
+    </ion-row>
+    <ion-row justify-content-center class="label-row">
+      <span class="title-label">{{title}}</span>
+    </ion-row>
+  </ion-grid>
+  <ion-grid no-padding class="grid-form">
+    <form (ngSubmit)="login()" [formGroup]="loginForm" novalidate>
+      <ion-list no-lines>
+        <ion-item style="padding: 0px 16px;">
+          <ion-icon name="ios-mail-outline" class="icon" item-left></ion-icon>
+          <ion-input id="input-email" type="text" formControlName="email" 
+            placeholder="correo electrónico" clearInput [(ngModel)]="user.email"></ion-input>
+        </ion-item>
+        <ion-item style="padding: 0px 16px;">
+            <ion-icon name="md-lock" class="icon" item-left></ion-icon>
+            <ion-input class="input" id="input-password" type="password" formControlName="password"
+            placeholder="contraseña" clearInput [(ngModel)]="user.password"></ion-input>
+          </ion-item>
+      </ion-list>
+      <ion-row justify-content-center>
+          <button type="submit" [disabled]="loginForm.invalid" class="btn-submit" ion-button outline>
+              <span *ngIf="!isFormSubmited">Iniciar Sesion</span>
+              <img src="./assets/imgs/ico-spinner-white.svg" *ngIf="isFormSubmited" class="ico-spinner-white" />
+          </button>
+      </ion-row>
+      <ion-row justify-content-center>
+          <span class="register-label">no tienes una cuenta? <b (click)="register()">Regístrate</b></span>
+      </ion-row>
+    </form>
+
+  </ion-grid>
+</ion-content>

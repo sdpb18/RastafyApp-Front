@@ -14,3 +14,102 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.tabs-md .tab-button {
+  color: #2a1b30 !important;
+ }
+
+.tabs-ios .tab-button {
+  color: #2a1b30 !important;
+ }
+
+ //selected color
+ .tabs-md .tab-button[aria-selected=true] {
+   color: #f16065 !important;
+ }
+
+ .tabs-ios .tab-button[aria-selected=true] {
+   color: #f16065 !important;
+ }
+
+.tab-button {
+    color: #2a1b30 !important;
+    background-color: transparent;
+}
+
+.tabs-ios .tabbar {
+   background-color: #442d4a !important;
+ }
+
+.tabs-md .tabbar{
+   background-color: #442d4a !important;
+ }
+
+ .tabs-md .tab-button[aria-selected=true] .tab-button-icon {
+    color: #f16065 !important;
+}
+
+.tabs-ios .tab-button[aria-selected=true] .tab-button-icon {
+    color: #f16065 !important;
+}
+
+.tabs-ios .tab-button-icon {
+  color: #2a1b30 !important;
+}
+
+.list-md .item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus):last-child, .list-md .item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus):last-child {
+  border-bottom-color: none !important;
+  -webkit-box-shadow: unset !important;
+  box-shadow: unset !important;
+}
+
+.list-md .item-input.item-input-has-focus:last-child, list-md .item-input.input-has-focus:last-child {
+border-bottom-color: none !important;
+  -webkit-box-shadow: unset !important;
+  box-shadow: unset !important;
+}
+
+.list-ios .item-input.item-input-has-focus:last-child, list-ios .item-input.input-has-focus:last-child {
+border-bottom-color: none !important;
+  -webkit-box-shadow: unset !important;
+  box-shadow: unset !important;
+}
+
+
+.item-md.item-input.ng-invalid.ng-touched:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+border-bottom-color: none !important;
+-webkit-box-shadow: unset !important;
+box-shadow: unset !important;
+}
+
+.item-ios.item-input.ng-invalid.ng-touched:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+border-bottom-color: none !important;
+-webkit-box-shadow: unset !important;
+box-shadow: unset !important;
+}
+
+
+.list-ios .item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus):last-child, .list-ios .item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus):last-child {
+border-bottom-color: none !important;
+-webkit-box-shadow: unset !important;
+box-shadow: unset !important;
+}
+
+.list-md .item-input.ng-invalid.ng-touched:not(.input-has-focus):not(.item-input-has-focus):last-child {
+border-bottom-color: none !important;
+-webkit-box-shadow: unset !important;
+box-shadow: unset !important;
+}
+
+.list-ios .item-input.ng-invalid.ng-touched:not(.input-has-focus):not(.item-input-has-focus):last-child {
+border-bottom-color: none !important;
+-webkit-box-shadow: unset !important;
+box-shadow: unset !important;
+}
+
+.button-ios.activated {
+ background-color: #442d4a !important;
+}
+.button-md.activated {
+ background-color: #442d4a !important;
+}

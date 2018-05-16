@@ -1,0 +1,31 @@
+
+<ion-content padding class="bg">
+  <ion-grid class="grid-title">
+    <ion-row justify-content-center>
+      <ion-icon class="ico-back-arrow" name="arrow-back" item-left navPop></ion-icon>
+      <span class="title-label"> Registrate!</span>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <form (ngSubmit)="register()" [formGroup]="registerForm" novalidate>
+      <ion-list no-lines>
+        <ion-item style="padding: 0px 16px;">
+          <ion-input id="input-name" type="text" formControlName="name" placeholder="Nombre" clearInput></ion-input>
+        </ion-item>
+        <ion-item style="padding: 0px 16px;">
+          <ion-input id="input-lastname" type="text" formControlName="lastName" placeholder="Apellido" clearInput></ion-input>
+        </ion-item>
+        <ion-item style="padding: 0px 16px;">
+          <ion-input id="input-email" type="text" formControlName="email" placeholder="Correo electrónico" clearInput></ion-input>
+        </ion-item>
+        <ion-item style="padding: 0px 16px;">
+          <ion-input id="input-password" type="password" formControlName="password" placeholder="Contraseña" clearInput></ion-input>
+        </ion-item>
+      </ion-list>
+      <ion-row justify-content-center>
+          <button type="submit" [disabled]="registerForm.invalid" class="btn-submit" ion-button outline>Regístrate</button>
+      </ion-row>
+    </form>
+  </ion-grid>
+</ion-content>

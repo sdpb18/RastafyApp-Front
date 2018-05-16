@@ -1,3 +1,31 @@
 page-home {
+  .bg {
+    background-color: #2a1b30;
+  }
 
+  .title-label {
+    color: white;
+    font-weight: bold;
+    padding-bottom: 8px;
+    font-size: 16px;
+  }
+
+  .desc-label {
+    color: white;
+    font-weight: 350;
+    font-size: 14px;
+  }
+
+  .btn-row {
+    margin-top: 50px;
+  }
+
+  .btn-submit {
+    border-color: white !important;
+    color: white !important;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 48px;
+    width: 50%;
+  }
 }

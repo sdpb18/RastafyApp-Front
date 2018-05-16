@@ -1,0 +1,17 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Albums</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="bg">
+  <ion-card class="card-content" *ngFor="let album of albums">
+    <img src="{{ url + 'getimagealbum/'+ album.image}}" />
+    <div class="card-title">{{album?.title}}</div>
+    <!-- <div class="">{{album?.artist.name}}</div> -->
+    <div class="">{{album?.description}}</div>
+    <div class="">{{album?.year}}</div>
+  </ion-card>
+</ion-content>

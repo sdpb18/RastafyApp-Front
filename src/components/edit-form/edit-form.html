@@ -1,0 +1,33 @@
+<!-- Generated template for the EditFormComponent component -->
+<ion-content class="bg">
+  <ion-grid class="grid-title">
+    <ion-row justify-content-center>
+      <ion-icon class="ico-back-arrow" name="arrow-back" item-left navPop></ion-icon>
+      <span class="title-label"> Actualizar datos</span>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid class="grid-form">
+    <input class="input-img" type="file" [(ngModel)]="user_update.image" id="upimgfile" name="uploadfile">
+    <form (ngSubmit)="updateUser()" [formGroup]="updateForm" novalidate>
+      <ion-list no-lines>
+        <ion-item style="padding: 0px 16px;">
+          <ion-input id="input-name" type="text" formControlName="name" placeholder="Nombre: {{user?.name}}" clearInput></ion-input>
+        </ion-item>
+        <ion-item style="padding: 0px 16px;">
+          <ion-input id="input-lastname" type="text" formControlName="lastName" placeholder="Apellido: {{user?.lastname}}" clearInput></ion-input>
+        </ion-item>
+        <ion-item style="padding: 0px 16px;">
+          <ion-input id="input-email" type="text" formControlName="email" placeholder="Correo: {{user?.email}}" clearInput></ion-input>
+        </ion-item>
+      </ion-list>
+      <ion-row justify-content-center>
+        <button type="submit" [disabled]="updateForm.invalid" class="btn-submit" ion-button outline>
+          <span *ngIf="!isFormSubmited">Actualizar</span>
+          <img src="./assets/imgs/ico-spinner-white.svg" *ngIf="isFormSubmited" class="ico-spinner-white" />
+        </button>
+      </ion-row>
+    </form>
+  </ion-grid>
+
+</ion-content>

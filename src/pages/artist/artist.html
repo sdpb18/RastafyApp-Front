@@ -1,0 +1,17 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Artistas</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="bg">
+    <ion-card class="card-content" *ngFor ="let artist of artist">
+      <div class="cloak"></div>
+        <img src="{{ url + 'getimageartist/'+ artist.image}}"/>
+        <div class="card-title">{{artist?.name}}</div>
+        <div class="card-subtitle">{{artist?.description}}</div>
+    </ion-card>
+</ion-content>
+ 

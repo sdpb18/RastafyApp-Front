@@ -1,0 +1,70 @@
+page-login {
+  .bg {
+    background-color: #2a1b30;
+  }
+  .logo {
+    height: 100px;
+    width: 100px;
+  }
+  .title-label {
+    font-size: 37px;
+    font-weight: 300;
+    line-height: normal;
+    color: white;
+  }
+
+  .register-label {
+    color:white;
+    padding-top:16px;
+    font-weight: 200;
+  }
+
+  .logo-row {
+    padding-top: 50px;
+  }
+
+  .label-row {
+    padding-top: 16px;
+  }
+
+  .item.item-input {
+    background-color: transparent;
+    border: none;
+  }
+  
+  .input {
+    color: white;
+    border-bottom: 1px solid white;
+  }
+
+  .icon {
+    color: white;
+  }
+
+  .grid-form {
+    padding-top: 50px !important;
+  }
+
+  .list-md .item-input:last-child {
+    border-bottom: none;
+  }
+
+  .btn-submit {
+    border-color: white !important;
+    color: white !important;
+    font-weight: bold;
+    border-radius: 10px;
+    height: 48px;
+    width: 90%;
+  }
+
+  .ico-spinner-white {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    position: absolute;
+    -webkit-animation: spin 4s linear infinite;
+    -moz-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite;
+  }
+}

@@ -1,0 +1,73 @@
+page-profile {
+  .bg {
+    // background: -moz-linear-gradient(top, #f16065 12%, #000000 98%); /* FF3.6-15 */
+    // background: -webkit-linear-gradient(top, #f16065 12%,#000000 98%);
+    background: -moz-linear-gradient(top, rgba(241,96,101,1) 12%, rgba(0,0,0,1) 42%, rgba(0,0,0,1) 42%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(241,96,101,1) 12%,rgba(0,0,0,1) 42%,rgba(0,0,0,1) 42%);
+  }
+
+  .grid-img {
+  }
+
+  .oval-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: white;
+  }
+
+  .user-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    padding-top: 10px;
+  }
+
+  .email-label {
+    font-size: 14px;  
+    font-weight: 350;
+    color: white;
+  }
+
+  .media-row {
+    padding-top: 16px;
+  }
+
+  .number-row {
+    color:white;
+    font-weight: bold;
+  }
+
+  .desc-row {
+    color:white;
+    font-weight: 350;
+  }
+
+  .button-ios {
+    height: 20px !important;
+  }
+
+  .button-md {
+    height: 20px !important;
+  }
+
+  .show-modal {
+    border-color: white !important;
+    color: white !important;
+    font-weight: bold;
+    border-radius: 40px;
+    margin-top: 16px;
+    font-size: 10px;
+  }
+
+  .plus-button {
+    background-color: transparent;
+    color: #2a1b30;
+    font-weight: bold;
+    font-size: 60px;
+    position: relative;
+    left: 50%;
+    margin-left: -25px;
+    top: 0px;
+  }
+}
